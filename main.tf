@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    dns = {
+      source  = "hashicorp/terraform-provider-dns"
+      version = "= 3.2.1"
+    }
+  }
+}
+
 data "dns_txt_record_set" "hashicorp" {
   host = "www.google.com"
 }
