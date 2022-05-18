@@ -1,5 +1,5 @@
 data "dns_txt_record_set" "hashicorp" {
-  host = "google.com"
+  host = "www.google.com"
 }
 
 output "hashi_txt" {
